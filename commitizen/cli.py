@@ -262,8 +262,9 @@ def main():
 
     # Show help if no arg provided
     if len(sys.argv) == 1:
-        parser.print_help(sys.stderr)
-        raise ExpectedExit()
+        sys.argv.append('c')
+        # parser.print_help(sys.stderr)
+        # raise ExpectedExit()
 
     # This is for the command required constraint in 2.0
     try:
